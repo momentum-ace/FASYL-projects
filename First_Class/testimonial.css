@@ -1,0 +1,128 @@
+@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
+
+.root{
+    --bg-purple50: hsl(260, 100%, 95%);
+    --bg-purple300: hsl(264, 82%, 80%);
+    --bg-purple500: hsl(263, 55%, 52%);
+    --bg-white: hsl(0, 0%, 100%);
+    --bg-grey100: hsl(214, 17%, 92%);
+    --bg-gray200: hsl(0, 0%, 81%);
+    --bg-gray400: hsl(224, 10%, 45%);
+    --bg-gray500: hsl(217, 19%, 35%);
+    --bg-darkblue: hsl(219, 29%, 14%);
+    --bg-Black: hsl(0, 0%, 7%);
+
+}
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(214, 17%, 92%);
+    line-height: 1.5;
+    margin: 10px 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: auto;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 975px;
+    margin: 0 auto;
+    height: 80%;
+    
+    
+    
+}
+.testimonial {
+    padding: 1.3rem 1rem;
+    border-radius: 9px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.testimonial:nth-child(1) {
+    background-color: #7541c8;
+    color: white;
+    grid-column: span 2;
+    
+}
+
+.testimonial:nth-child(2) {
+    background-color: #48556a;
+    color: white;
+}
+
+.testimonial:nth-child(3) {
+    background-color: white;
+    grid-row: span 2;
+}
+
+.testimonial:nth-child(4) {
+    background-color: white;
+
+}
+
+.testimonial:nth-child(5) {
+    background-color: #424242;
+    color: white;
+    grid-column: span 2;
+    min-height: 100px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.user-status {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin: 0;
+}
+
+/* Testimonial Content */
+.testimonial-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.testimonial-quote {
+    font-size: 0.6rem;
+    opacity: 0.7;
+    margin: 0;
+    line-height: 1.6;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+}

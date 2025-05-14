@@ -1,0 +1,79 @@
+@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: rgb(12, 12, 12);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Card container */
+  .card{
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Avatar image  */
+  .avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  /* Name and location */
+  .name {
+    
+    font-weight: 100px;
+    margin-bottom: 0.25rem;
+    text-decoration: #fff;
+  }
+
+  .location {
+    font-size: 0.85rem;
+    color: #b3ff00;
+    margin-bottom: 1rem;
+  }
+  
+  .bio {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+
+  }
+  
+  /* Buttons */
+  .links button {
+    display: block;
+    width: 100%;
+    background-color: #292828;
+    border: none;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .links button:hover {
+    background-color: #a1cc00;
+  }
+  
